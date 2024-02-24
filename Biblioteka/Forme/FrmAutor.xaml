@@ -1,0 +1,24 @@
+﻿<Window x:Class="Biblioteka.Forme.FrmAutor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Biblioteka.Forme"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen" WindowStyle="None"
+        Title="FrmAutor" Height="450" Width="800"
+          BorderBrush="Moccasin"
+          BorderThickness="20">
+    <Window.Background>
+        <ImageBrush ImageSource="C:\Users\38169\Downloads\slikaProjekat1.jpeg" Stretch="None"/>
+    </Window.Background>
+
+    <Grid>
+        <Label TextBlock.Foreground="White"  Content="Ime:" FontWeight="UltraBold" FontSize="18" HorizontalAlignment="Left" Margin="220,115,0,0" VerticalAlignment="Top"/>
+        <Label TextBlock.Foreground="White"  Content="Prezime:" FontWeight="UltraBold" FontSize="18" HorizontalAlignment="Left" Margin="220,145,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtImeAutora" HorizontalAlignment="Left" Height="23" Margin="300,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox  Name="txtPrezimeAutora" HorizontalAlignment="Left" Height="25" Margin="300,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.525,1.271"/>
+        <Button x:Name="btnSacuvaj" Content="sacuvaj" FontStyle="Italic" FontSize="15" HorizontalAlignment="Left" Margin="245,225,0,0" VerticalAlignment="Top"  Width="75" Click="btnSacuvaj_Click"/>
+        <Button x:Name="btnOtkazi" Content="otkazi" FontStyle="Italic" FontSize="15" HorizontalAlignment="Left" Margin="380,225,0,0" VerticalAlignment="Top" Width="75"  Click="btnOtkazi_Click"/>
+
+    </Grid>
+</Window>
